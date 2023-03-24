@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Button from '../UI/Button';
 import Card from '../UI/Card';
 import styles from './AddUser.module.css';
 
@@ -48,7 +49,7 @@ export default function AddUser({ onAddUser }) {
                     value={age}
                     onChange={ageChangeHandler}
                 />
-                <button className={styles.button}>Submit</button>
+                <Button type='submit'>Okay</Button>
             </form>
         </Card>
     );

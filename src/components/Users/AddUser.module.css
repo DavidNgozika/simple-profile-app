@@ -15,15 +15,3 @@
     border-radius: 5px;
     border: 1px solid grey;
 }
-
-.button {
-    padding: 0.5rem;
-    width: 20%;
-    margin-left: auto;
-    border-radius: 5px;
-    border: none;
-    background-color: #099;
-    color: whitesmoke;
-    font-weight: bold;
-    cursor: pointer;
-}
