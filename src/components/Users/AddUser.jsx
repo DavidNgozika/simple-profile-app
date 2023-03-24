@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import styles from './AddUser.module.css';
 
-export default function AddUser() {
+export default function AddUser({ onAddUser }) {
     const [username, setUsername] = useState('');
     const [age, setAge] = useState('');
 
@@ -15,7 +15,7 @@ export default function AddUser() {
 
     const submitHandler = e => {
         e.preventDefault();
-        console.log(username, age);
+        onAddUser(username, age);
         setUsername('');
         setAge('');
     };
