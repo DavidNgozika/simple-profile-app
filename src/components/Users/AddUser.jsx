@@ -16,6 +16,15 @@ export default function AddUser({ onAddUser }) {
 
     const submitHandler = e => {
         e.preventDefault();
+        if (username.trim().length === 0 ||
+            age.trim().length === 0) {
+            return;
+        }
+
+        if (+age < 1) {
+            return;
+        }
+
         onAddUser(username, age);
         setUsername('');
         setAge('');
