@@ -1,10 +1,11 @@
 .container {
-    list-style: none;
-    background-color: white;
-    border-radius: 10px;
     width: 80%;
-    padding: 0.75rem;
     margin: 2rem auto 0;
+}
+
+.container ul {
+    list-style: none;
+    padding: 0.75rem;
 }
 
 .container li {
