@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import styles from './AddUser.module.css';
 
 export default function AddUser() {
     const [username, setUsername] = useState('');
@@ -20,7 +21,7 @@ export default function AddUser() {
     };
 
     return (
-        <form onSubmit={submitHandler}>
+        <form onSubmit={submitHandler} className={styles.container}>
             <label htmlFor='username'>Username:</label>
             <input 
                 id='username' 
@@ -36,7 +37,7 @@ export default function AddUser() {
                 value={age}
                 onChange={ageChangeHandler}
             />
-            <button>Submit</button>
+            <button className={styles.button}>Submit</button>
         </form>
     );
 }
