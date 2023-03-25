@@ -1,0 +1,46 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.75);
+}
+
+.container {
+    position: fixed;
+    top: 30vh;
+    left: 10%;
+    width: 80%;
+    z-index: 100;
+    overflow: hidden;
+}
+
+.container header {
+    background-color: #600;
+    padding: 1rem;
+}
+
+.container h2 {
+    margin: 0;
+    color: white;
+}
+
+.container div {
+    padding: 1rem;
+}
+
+.container footer {
+    padding: 1rem;
+}
+
+.container button {
+    display: block;
+    margin-left: auto;
+    background-color: #600;
+}
+
+.container button:hover {
+    background-color: #900;
+}
