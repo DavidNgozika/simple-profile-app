@@ -3,23 +3,24 @@ import Button from './Button';
 import Card from './Card';
 import styles from './ErrorModal.module.css';
 
-export default function ErrorModal({ title, message }) {
+export default function ErrorModal({ title, message, onConfirm }) {
     return (
         <>
             <div 
                 className={styles.backdrop}
+                onClick={onConfirm}
             />
             <Card className={styles.container}>
                 <header>
-                    <h2>{title}An Error has occurred!</h2>
+                    <h2>{title}</h2>
                 </header>
 
                 <div>
-                    <p>{message}Please enter a valid input.</p>
+                    <p>{message}</p>
                 </div>
 
                 <footer>
-                    <Button>Okay</Button>
+                    <Button onClick={onConfirm}>Okay</Button>
                 </footer>
             </Card>
         </>

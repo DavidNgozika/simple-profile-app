@@ -9,7 +9,7 @@ export default function UsersList({ users }) {
                 <ul>
                     {users.map((user, index) => (
                         <li key={index}>
-                            {user.name} {user.age}
+                            {user.name} ({user.age} years old)
                         </li>
                     ))}
                 </ul>
